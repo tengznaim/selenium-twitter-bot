@@ -13,3 +13,7 @@ This is a simple twitter bot made using Selenium that at the moment just creates
   ```
   PATH = "INSERT_DRIVER_PATH_HERE"
   ```
+
+## References
+
+- https://medium.com/swlh/automate-your-tweets-with-selenium-ee93bf26eb82 (used to look for the selector for certain elements)
