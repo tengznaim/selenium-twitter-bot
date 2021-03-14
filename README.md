@@ -17,7 +17,7 @@ This is a simple twitter bot made using Selenium that at the moment just creates
   ```
   PATH = "INSERT_DRIVER_PATH_HERE"
   ```
-- Create a .env file and add your username as follow:
+- Create a .env file and add your credentials as follows:
   ```
   TWITTER_USERNAME=Insert_Username_Here
   TWITTER_PASSWORD=Insert_Password_Here
