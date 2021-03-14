@@ -8,10 +8,19 @@ This is a simple twitter bot made using Selenium that at the moment just creates
   ```
   pip install selenium
   ```
+- dotenv-python module installed (implemented just to handle the private nature of usernames and passwords)
+  ```
+  pip install python-dotenv
+  ```
 - Browser driver for your browser of choice. In my case, I used Google Chrome in which the driver can be found at the following: https://chromedriver.chromium.org/downloads (Ensure that the driver version matches your browser version)
   \*Note that in my case, I also relocated the driver to be in my Program Files (x86) directory. If you have it in another location, change the PATH in the code as seen below:
   ```
   PATH = "INSERT_DRIVER_PATH_HERE"
+  ```
+- Create a .env file and add your username as follow:
+  ```
+  TWITTER_USERNAME=Insert_Username_Here
+  TWITTER_PASSWORD=Insert_Password_Here
   ```
 
 ## References

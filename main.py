@@ -3,6 +3,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import settings
+import os
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
@@ -20,8 +22,8 @@ try:
     )
 
     #Change for your username and password here.
-    username_field.send_keys("INSERT_YOUR_USERNAME_HERE")
-    password_field.send_keys("INSERT_YOUR_PASSWORD_HERE")
+    username_field.send_keys(os.getenv("TWITTER_USERNAME"))
+    password_field.send_keys(os.getenv("TWITTER_PASSWORD"))
 
     #Press enter once the fields are filled (You could also try to access the button element)
     password_field.send_keys(Keys.RETURN)
@@ -39,5 +41,5 @@ try:
 
     tweet_button.click()
 
-finally:
+except:
     driver.quit()
